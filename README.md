@@ -9,3 +9,4 @@ tsc app.ts
 number -> 1, 5.3, -10 (All numbers)
 string -> 'Hi', "Hi", `Hi` (All text values)
 boolean -> true, false
+object -> {age: 23} (Any JavaScript object)
