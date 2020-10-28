@@ -1,6 +1,6 @@
 # typescript-udemy
 
-## Compile typescript file
+## Compile
 
 tsc app.ts
 
