@@ -17,3 +17,5 @@ object -> {age: 23} (Any JavaScript object, more specific types are possible)
 Array -> [1, 2, 3] (Any Javascript array, type can be flexible or strict)
 
 Tuple -> [1, 2] (Added by Typescript: Fixed-length array)
+
+Enum -> enum { NEW, OLD } (Added by typescript: Automatically enumerated global constant identifiers)
