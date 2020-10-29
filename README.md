@@ -19,3 +19,5 @@ Array -> [1, 2, 3] (Any Javascript array, type can be flexible or strict)
 Tuple -> [1, 2] (Added by Typescript: Fixed-length array)
 
 Enum -> enum { NEW, OLD } (Added by typescript: Automatically enumerated global constant identifiers)
+
+Any -> * (Any kind of value, no specific type assignment. Avoid)
