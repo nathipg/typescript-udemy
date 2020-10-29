@@ -1,56 +1,17 @@
-// const person: {
-//     name: string;
-//     age: number;
-//     hobbies: string[];
-//     role: [number, string]; // Tuple
-// } = {
-//     name: 'Pissuti',
-//     age: 23,
-//     hobbies: [
-//         'Sports',
-//         'Cooking'
-//     ],
-//     role: [2, 'author']
-// };
+const combine = (input1: number | string, input2: number | string) => {
+    let result: number | string;
+    
+    if(typeof input1 === 'number' && typeof input2 === 'number') {
+        result = input1 + input2;
+    } else {
+        result = input1.toString() + input2.toString();
+    }
 
-// person.role.push('admin'); // Works
-// person.role[1] = 10; // Doesn't work
-// person.role = [10, 'admin']; // Works
-// person.role = [10, 'admin', 999]; // Doesn't work
-
-// for(const hobby of person.hobbies) {
-//     console.log(hobby.toUpperCase());
-// }
-
-// let favoriteActivities: any[]; // Avoid
-// favoriteActivities = ['Sports', 30];
-
-// Camel case because is a custom type
-enum Role {
-    ADMIN,
-    READ_ONLY,
-    AUTHOR
+    return result;
 };
 
-// Also possible assign numbers or strings
-// enum Role {
-//     ADMIN = 5,
-//     READ_ONLY, // 6
-//     AUTHOR = 'AUTHOR'
-// };
+const combinedAges = combine(30, 26);
+console.log(combinedAges);
 
-const person = {
-    name: 'Pissuti',
-    age: 23,
-    hobbies: [
-        'Sports',
-        'Cooking'
-    ],
-    role: Role.AUTHOR
-};
-
-console.log(person);
-
-if(person.role === Role.AUTHOR) {
-    console.log('AUTHOR');
-}
+const combinedNames = combine('Max', 'Anna');
+console.log(combinedNames);

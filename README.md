@@ -21,3 +21,7 @@ Tuple -> [1, 2] (Added by Typescript: Fixed-length array)
 Enum -> enum { NEW, OLD } (Added by typescript: Automatically enumerated global constant identifiers)
 
 Any -> * (Any kind of value, no specific type assignment. Avoid)
+
+## Union Types
+
+Combine types using | (pipe). Example -> value: number | string
