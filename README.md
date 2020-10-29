@@ -25,3 +25,7 @@ Any -> * (Any kind of value, no specific type assignment. Avoid)
 ## Union Types
 
 Combine types using | (pipe). Example -> value: number | string
+
+## Literal Types
+
+This type is a exact value. Example -> const value = 2.8; // Type is 2.8
