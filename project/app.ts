@@ -1,24 +1,9 @@
-const add = (n1: number, n2: number): number => {
-    return  n1 + n2;
-};
+let userInput: unknown;
+let userName: string;
 
-const printResult = (num: number): void => {
-    console.log('Result: ' + num);
+userInput = 5;
+userInput = 'Max';
+
+if(typeof userInput === 'string') {
+    userName = userInput;
 }
-
-printResult(add(5, 12));
-
-let combineValues: (n1: number, n2: number) => number;
-
-combineValues = add;
-
-console.log(combineValues(8 , 8));
-
-const addAndHandle = (n1: number, n2: number, callback: (num: number) => void) => {
-    const result = n1 + n2;
-    callback(result);
-}
-
-addAndHandle(10, 20, num => {
-    console.log(num);
-});

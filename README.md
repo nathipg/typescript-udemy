@@ -22,6 +22,8 @@ Enum -> enum { NEW, OLD } (Added by typescript: Automatically enumerated global 
 
 Any -> * (Any kind of value, no specific type assignment. Avoid)
 
+unknown -> Allow assign any value to a variable of this type, but is not allow to assign unknown to a variable with defined type without make sure it's the right type
+
 ## Union Types
 
 Combine types using | (pipe). Example -> value: number | string
