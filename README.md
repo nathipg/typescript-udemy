@@ -32,4 +32,9 @@ This type is a exact value. Example -> const value = 2.8; // Type is 2.8
 
 ## Type aliases / Custom types
 
-Define a new type name to a union type. Example -> type Combinable = number | string;
+Type aliases can be used to "create" your own types. 
+
+You're not limited to storing union types though - you can also provide an alias to a (possibly complex) object type.
+
+Example 1 -> type Combinable = number | string;
+Example 2 -> type User = { name: string; age: number };
