@@ -1,8 +1,10 @@
 # typescript-udemy
 
-## Compile
+## Compiler
 
 tsc app.ts
+
+tsc app.ts --watch
 
 ## Core Types
 
