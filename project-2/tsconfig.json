@@ -65,5 +65,14 @@
     /* Advanced Options */
     "skipLibCheck": true,                     /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
-  }
+  },
+  "exclude": [
+    "node_modules" // If exclude key is not defined, this is default
+  ],
+  // "include": [
+  //   "app.ts"
+  // ]
+  // "files" : [ // The same as include, but used only to files
+  //   "app.ts"
+  // ]
 }
