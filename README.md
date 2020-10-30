@@ -2,9 +2,15 @@
 
 ## Compiler
 
-tsc app.ts
+tsc app.ts -> Compile file
 
-tsc app.ts --watch
+tsc app.ts --watch -> Compile file every time it changes
+
+tsc --init -> Indicate that everything in the folder should be compiled
+
+tsc -> Compile all files (After run init)
+
+tsc --watch -> Compile all files every time it changes (After run init)
 
 ## Core Types
 
