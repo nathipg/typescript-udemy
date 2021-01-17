@@ -79,3 +79,27 @@ objStorage.addItem({name: 'Max'});
 objStorage.addItem({name: 'Manu'});
 objStorage.removeItem({name: 'Max'});
 console.log(objStorage.getItems()); */
+
+// --- Generic Utility Types
+
+// Partial
+
+interface CourseGoal {
+    title: string;
+    description: string;
+    completeUntil: Date;
+}
+
+function createCourseGoal(title: string, description: string, date: Date): CourseGoal {
+    let courseGoal: Partial<CourseGoal> = {};
+    courseGoal.title = title;
+    courseGoal.description = description;
+    courseGoal.completeUntil = date;
+    return courseGoal as CourseGoal;
+}
+
+// Readonly
+
+const namesArray: Readonly<string[]> = ['Max', 'Sports'];
+
+/* namesArray.push('Manu'); */

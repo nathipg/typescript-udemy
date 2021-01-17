@@ -61,6 +61,8 @@ Optional Chaining -> Allow access a property in object if is defined. Ex: fetche
 
 A type which is connected with another type and is flexible regarding which exactly type it is. Ex: Array, it stores data from any type, but is mandatory to define which (Array<string> or string[])
 
+"Flexibility combine with type safety"
+
 ### Generic function
 
 Example:
