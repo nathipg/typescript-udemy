@@ -145,3 +145,9 @@ const fetchedUserData = {
 };
 
 console.log(fetchedUserData?.job?.title);
+
+const userInput = null;
+
+const storedData = userInput ?? 'DEFAULT'; // Check if is null or undefined
+
+console.log(storedData);
