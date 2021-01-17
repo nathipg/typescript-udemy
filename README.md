@@ -56,3 +56,128 @@ You're not limited to storing union types though - you can also provide an alias
 
 Example 1 -> type Combinable = number | string;
 Example 2 -> type User = { name: string; age: number };
+
+## Classes
+
+Blueprints used to create objects easier
+
+### Constructor
+
+Method used to instantiate a class
+
+Example: 
+```typescript
+class Department {
+    public name: string;
+
+    constructor(name: string) {
+        this.name = name;
+    }
+}
+```
+
+#### Shorthand
+
+it's not necessary to pre create properties which will be received as a parameter in constructor
+
+Example: 
+```typescript
+class Department {
+    constructor(public name: string) {
+    }
+}
+```
+
+#### Private Constructor
+
+Constructor can be set to private, so it can't be called outside class
+
+### Properties
+
+Class variables
+
+#### Public
+
+Can be access without limitation
+
+#### Private
+
+Can be access only inside class (Classes who inherit this class, cannot access)
+
+#### Protected
+
+Can be access only inside class and by classes who inherit it
+
+#### Readonly
+
+Can be set only in initialization
+
+### Getters
+
+Method used to access private properties
+
+### Setters
+
+Method used to set private properties
+
+### Inheritance
+
+When a class inherits properties and methods from another class, being able to add new ones or overwrite existing ones
+
+Uses "extends" key word, it is only possible to inherit from one class
+
+### Abstract Classes
+
+Class which can not be initiated, used as a base which will be inherit by other class
+
+### Override
+
+When the class overrides methods or properties of the parent class, defining new ones with the same name
+
+### Singleton
+
+Class which can only be instanciated once, needs a private constructor
+
+Example:
+```typescript
+class Department {
+    private static instance: Department;
+
+    private constructor(name: string) {
+    }
+
+    static getInstance() {
+        if(this.instance) {
+        return this.instance;
+        }
+
+        this.instance = new Department('Name here');
+
+        return this.instance;
+    }
+}
+
+const department = Department.getInstance();
+```
+
+### Interface
+
+Describe the structure of an object. A class can implement multiple interfaces.
+
+Example:
+```typescript
+    interface Greetable {
+        name: string;
+
+        greet(phrase: string): void;
+    }
+
+    class Person implements Greetable {
+        constructor(public name: string, public age: number) {
+        }
+
+        greet(phrase: string) {
+            console.log(`${phrase} ${this.name}`);
+        }
+    }
+```
