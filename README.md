@@ -57,6 +57,10 @@ Functions Overloads -> Allow us to define multiple functions signatures to same 
 
 Optional Chaining -> Allow access a property in object if is defined. Ex: fetchedUserData?.job?.title
 
+## Generics
+
+A type which is connected with another type and is flexible regarding which exactly type it is. Ex: Array, it stores data from any type, but is mandatory to define which (Array<string> or string[])
+
 ## Function return types
 
 All regular types
