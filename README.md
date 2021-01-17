@@ -124,7 +124,7 @@ Method used to set private properties
 
 When a class inherits properties and methods from another class, being able to add new ones or overwrite existing ones
 
-Uses "extends" key word, it is only possible to inherit from one class
+Uses "extends" key word, it is only possible to inherit from one class but a interface can inherit from multiple interfaces
 
 ### Abstract Classes
 
