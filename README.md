@@ -36,6 +36,8 @@ unknown -> Allow assign any value to a variable of this type, but is not allow t
 
 Intersection types -> Allow us to combine other types. Example: type ElevatedEmployee = Admin & Employee;
 
+Discriminated Unions -> Pattern which makes type guards implementation easier. Example: Add "type" property at your custom type or interface, and then check the type with a switch where you need it
+
 ## Function return types
 
 All regular types
