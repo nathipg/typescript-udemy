@@ -61,6 +61,15 @@ Optional Chaining -> Allow access a property in object if is defined. Ex: fetche
 
 A type which is connected with another type and is flexible regarding which exactly type it is. Ex: Array, it stores data from any type, but is mandatory to define which (Array<string> or string[])
 
+### Generic function
+
+Example:
+```typescript
+    function merge<T, U>(objA: T, objB: U) {
+        return Object.assign(objA, objB);
+    }
+```
+
 ## Function return types
 
 All regular types
