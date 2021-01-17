@@ -38,6 +38,8 @@ Intersection types -> Allow us to combine other types. Example: type ElevatedEmp
 
 Discriminated Unions -> Pattern which makes type guards implementation easier. Example: Add "type" property at your custom type or interface, and then check the type with a switch where you need it
 
+Casting -> Tells typescript the variable is of a especific type
+
 ## Function return types
 
 All regular types
