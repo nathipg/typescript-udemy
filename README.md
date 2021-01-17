@@ -40,6 +40,19 @@ Discriminated Unions -> Pattern which makes type guards implementation easier. E
 
 Casting -> Tells typescript the variable is of a especific type
 
+Index properties -> Used when you don't know the name of the properties or hor many will be
+
+```typescript
+interface ErrorContainer {
+    [prop: string]: string;
+}
+
+const errorBag: ErrorContainer = {
+    email: 'Not valid email',
+    username: 'Must start with a capital character',
+};
+```
+
 ## Function return types
 
 All regular types
