@@ -53,6 +53,8 @@ const errorBag: ErrorContainer = {
 };
 ```
 
+Functions Overloads -> Allow us to define multiple functions signatures to same function
+
 ## Function return types
 
 All regular types

@@ -121,3 +121,16 @@ const errorBag: ErrorContainer = {
     email: 'Not valid email',
     username: 'Must start with a capital character',
 };
+
+function add2(a: number, b:number): number;
+function add2(a: string, b:string): string;
+function add2(a: Combinable, b: Combinable) {
+    if(typeof a === 'string' || typeof b === 'string') {
+        return a.toString() + b.toString();
+    }
+
+    return a + b;
+}
+
+const result = add2('asd', 'asd');
+result.split(' ');
