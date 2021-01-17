@@ -55,6 +55,8 @@ const errorBag: ErrorContainer = {
 
 Functions Overloads -> Allow us to define multiple functions signatures to same function
 
+Optional Chaining -> Allow access a property in object if is defined. Ex: fetchedUserData?.job?.title
+
 ## Function return types
 
 All regular types
