@@ -70,6 +70,17 @@ Example:
     }
 ```
 
+### Constraints
+
+Specifies that the generic type has to be a type of some constraint
+
+Example:
+```typescript
+    function merge<T extends object, U extends object>(objA: T, objB: U) {
+        return Object.assign(objA, objB);
+    }
+```
+
 ## Function return types
 
 All regular types
