@@ -32,3 +32,31 @@ class Person {
 const pers = new Person();
 
 console.log(pers);
+
+function Log(target: any, propertyName: string | Symbol) {
+    console.log('Property decorator');
+    console.log(target, propertyName);
+}
+
+class Product {
+    @Log
+    title: string;
+    _price: number;
+
+    set price(price: number) {
+        if(price <= 0) {
+            throw new Error('Price should be greater than 0');
+        }
+
+        this._price = price;
+    }
+
+    constructor(title: string, price: number) {
+        this.title = title;
+        this._price = price;
+    }
+
+    getPriceWithTax(tax: number) {
+        return this._price * (1 + tax);
+    }
+}
