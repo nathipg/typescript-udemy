@@ -38,11 +38,27 @@ function Log(target: any, propertyName: string | Symbol) {
     console.log(target, propertyName);
 }
 
+function Log2(target: any, name: string | Symbol, descriptor: PropertyDescriptor) {
+    console.log('Access decorator');
+    console.log(target, name, descriptor);
+}
+
+function Log3(target: any, name: string | Symbol, descriptor: PropertyDescriptor) {
+    console.log('Method decorator');
+    console.log(target, name, descriptor);
+}
+
+function Log4(target: any, name: string | Symbol, position: number) {
+    console.log('Parameter decorator');
+    console.log(target, name, position);
+}
+
 class Product {
     @Log
     title: string;
     _price: number;
 
+    @Log2
     set price(price: number) {
         if(price <= 0) {
             throw new Error('Price should be greater than 0');
@@ -56,7 +72,8 @@ class Product {
         this._price = price;
     }
 
-    getPriceWithTax(tax: number) {
+    @Log3
+    getPriceWithTax(@Log4 tax: number) {
         return this._price * (1 + tax);
     }
 }
