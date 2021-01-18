@@ -1,6 +1,4 @@
-# typescript-udemy
-
-## Compiler
+# Compiler
 
 tsc app.ts -> Compile file
 
@@ -12,7 +10,7 @@ tsc -> Compile all files (After run init)
 
 tsc --watch -> Compile all files every time it changes (After run init)
 
-## Core Types
+# Core Types
 
 number -> 1, 5.3, -10 (All numbers)
 
@@ -32,7 +30,7 @@ Any -> * (Any kind of value, no specific type assignment. Avoid)
 
 unknown -> Allow assign any value to a variable of this type, but is not allow to assign unknown to a variable with defined type without make sure it's the right type
 
-## Advanced Types
+# Advanced Types
 
 Intersection types -> Allow us to combine other types. Example: type ElevatedEmployee = Admin & Employee;
 
@@ -57,13 +55,13 @@ Functions Overloads -> Allow us to define multiple functions signatures to same 
 
 Optional Chaining -> Allow access a property in object if is defined. Ex: fetchedUserData?.job?.title
 
-## Generics
+# Generics
 
 A type which is connected with another type and is flexible regarding which exactly type it is. Ex: Array, it stores data from any type, but is mandatory to define which (Array<string> or string[])
 
 "Flexibility combine with type safety"
 
-### Generic function
+## Generic function
 
 Example:
 ```typescript
@@ -72,7 +70,7 @@ Example:
     }
 ```
 
-### Generic Class
+## Generic Class
 
 Example:
 ```typescript
@@ -95,7 +93,7 @@ class DataStorage<T> {
 const textStorage = new DataStorage<string>();
 ```
 
-### Constraints
+## Constraints
 
 Specifies that the generic type has to be a type of some constraint
 
@@ -106,7 +104,7 @@ Example:
     }
 ```
 
-## Function return types
+# Function return types
 
 All regular types
 
@@ -114,15 +112,15 @@ void -> Return nothing (undefined)
 
 never -> Never return anything (Not even undefined)
 
-## Union Types
+# Union Types
 
 Combine types using | (pipe). Example -> value: number | string
 
-## Literal Types
+# Literal Types
 
 This type is a exact value. Example -> const value = 2.8; // Type is 2.8
 
-## Type aliases / Custom types
+# Type aliases / Custom types
 
 Type aliases can be used to "create" your own types. 
 
@@ -131,11 +129,11 @@ You're not limited to storing union types though - you can also provide an alias
 Example 1 -> type Combinable = number | string;
 Example 2 -> type User = { name: string; age: number };
 
-## Classes
+# Classes
 
 Blueprints used to create objects easier
 
-### Constructor
+## Constructor
 
 Method used to instantiate a class
 
@@ -150,7 +148,7 @@ class Department {
 }
 ```
 
-#### Shorthand
+### Shorthand
 
 it's not necessary to pre create properties which will be received as a parameter in constructor
 
@@ -162,53 +160,53 @@ class Department {
 }
 ```
 
-#### Private Constructor
+### Private Constructor
 
 Constructor can be set to private, so it can't be called outside class
 
-### Properties
+## Properties
 
 Class variables
 
-#### Public
+### Public
 
 Can be access without limitation
 
-#### Private
+### Private
 
 Can be access only inside class (Classes who inherit this class, cannot access)
 
-#### Protected
+### Protected
 
 Can be access only inside class and by classes who inherit it
 
-#### Readonly
+### Readonly
 
 Can be set only in initialization
 
-### Getters
+## Getters
 
 Method used to access private properties
 
-### Setters
+## Setters
 
 Method used to set private properties
 
-### Inheritance
+## Inheritance
 
 When a class inherits properties and methods from another class, being able to add new ones or overwrite existing ones
 
 Uses "extends" key word, it is only possible to inherit from one class but a interface can inherit from multiple interfaces
 
-### Abstract Classes
+## Abstract Classes
 
 Class which can not be initiated, used as a base which will be inherit by other class
 
-### Override
+## Override
 
 When the class overrides methods or properties of the parent class, defining new ones with the same name
 
-### Singleton
+## Singleton
 
 Class which can only be instanciated once, needs a private constructor
 
@@ -234,7 +232,7 @@ class Department {
 const department = Department.getInstance();
 ```
 
-### Interface
+## Interface
 
 Describe the structure of an object. A class can implement multiple interfaces.
 
@@ -255,3 +253,7 @@ Example:
         }
     }
 ```
+
+## Decorators
+
+A Decorator is a special kind of declaration that can be attached to a class declaration, method, accessor, property, or parameter. Decorators use the form @expression, where expression must evaluate to a function that will be called at runtime with information about the decorated declaration.
