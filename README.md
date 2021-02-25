@@ -296,3 +296,16 @@ Example:
 ```
   /// <reference path="file.ts" />
 ```
+
+# ES Module
+
+Example:
+```
+File 1:
+export class Sample {
+  ...
+}
+
+File 2:
+import { Sample } from 'relative-path/file.js';
+```
