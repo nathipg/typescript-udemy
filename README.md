@@ -276,3 +276,21 @@ class Person {
     ...
 }
 ```
+
+# Namespaces
+
+Used to group code
+
+Example:
+```
+  namespace AnyName {
+    ...
+  }
+```
+
+# Import file
+
+Example:
+```
+  /// <reference path="file.ts" />
+```
