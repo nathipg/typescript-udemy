@@ -284,7 +284,9 @@ Used to group code
 Example:
 ```
   namespace AnyName {
-    ...
+    export class Sample {
+      ...
+    }
   }
 ```
 
