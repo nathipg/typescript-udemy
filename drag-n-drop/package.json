@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server",
+    "start": "webpack-dev-server",
     "build": "webpack"
   },
   "keywords": [
@@ -19,7 +19,7 @@
     "ts-loader": "^8.0.17",
     "typescript": "^4.2.2",
     "webpack": "^5.24.2",
-    "webpack-cli": "^4.5.0",
+    "webpack-cli": "^3.3.8",
     "webpack-dev-server": "^3.11.2"
   }
 }
